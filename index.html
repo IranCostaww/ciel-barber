@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ciel Barber - Atendimento exclusivo e individualizado com o barbeiro Ciel. Cortes modernos, barba alinhada, luzes e platinado. Agendamento online direto no Setmore ou WhatsApp +55 73 9170-9107.">
+  <meta name="theme-color" content="#0B111A">
+  <title>Ciel Barber - Barbearia Exclusiva</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Estilos Customizados -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ================================================================= -->
+  <!-- 1. HEADER / BARRA DE NAVEGAÇÃO FIXA                                -->
+  <!-- ================================================================= -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <!-- Esquerda: Logotipo em Imagem Oficial -->
+      <a href="#inicio" class="brand-logo" aria-label="Ciel Barber - Página Inicial">
+        <img src="assets/logo.jpg" alt="Ciel Barber Logo" class="brand-logo-img">
+      </a>
+
+      <!-- Centro: Links de Navegação Desktop (Início, Sobre Nós, Serviços, Localização) -->
+      <nav class="nav-desktop" aria-label="Navegação Principal">
+        <ul class="nav-links">
+          <li><a href="#inicio" class="nav-link active">Início</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
+          <li><a href="#servicos" class="nav-link">Serviços</a></li>
+          <li><a href="#localizacao" class="nav-link">Localização</a></li>
+        </ul>
+      </nav>
+
+      <!-- Direita: Botão WhatsApp (Apenas Ícone) & Botão AGENDAR AGORA (Setmore) & Menu Mobile -->
+      <div class="header-actions">
+        <!-- Botão WhatsApp no Header (Apenas Ícone) -->
+        <a href="https://wa.me/557391709107" target="_blank" rel="noopener noreferrer" class="header-phone-badge header-phone-icon-only" aria-label="Contato WhatsApp Ciel Barber" title="WhatsApp: +55 73 9170-9107">
+          <svg class="phone-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.075-2.039-.481-1.612-.666-2.658-2.288-2.738-2.395-.081-.107-.648-.864-.648-1.649 0-.785.412-1.171.558-1.332.146-.161.319-.201.425-.201.107 0 .213.002.305.007.098.005.228-.037.357.272.132.318.452 1.103.492 1.184.04.081.067.175.013.282-.054.107-.081.175-.161.268-.08.094-.17.209-.243.281-.081.08-.166.168-.071.331.095.163.422.697.906 1.128.623.555 1.148.728 1.31.808.163.081.258.068.354-.041.096-.109.412-.48.522-.646.11-.166.219-.138.368-.083.149.055.945.446 1.108.527.162.081.27.122.31.189.04.068.04.394-.104.799zM12.042 2c-5.522 0-10 4.477-10 10 0 1.92.548 3.714 1.503 5.244l-1.545 5.642 5.823-1.527c1.479.866 3.197 1.364 5.03 1.364 5.522 0 10-4.477 10-10 0-5.523-4.478-10-10.811-10.723zm0 18.232c-1.637 0-3.153-.49-4.428-1.331l-.317-.209-3.282.861.876-3.2-.232-.369c-.933-1.37-1.428-2.99-1.428-4.664 0-4.542 3.696-8.238 8.238-8.238 4.542 0 8.238 3.696 8.238 8.238 0 4.542-3.696 8.238-7.887 8.912z"/>
+          </svg>
+        </a>
+
+        <!-- Botão AGENDAR AGORA (Setmore) -->
+        <a href="https://marciel17q7.setmore.com" target="_blank" rel="noopener noreferrer" class="btn btn-header" id="btn-header-agendar">
+          <span>AGENDAR AGORA</span>
+          <svg class="btn-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+
+        <!-- Botão Hambúrguer Mobile -->
+        <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Abrir Menu de Navegação" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Gaveta de Navegação Mobile -->
+    <div class="mobile-nav-drawer" id="mobile-nav" aria-hidden="true">
+      <div class="mobile-nav-backdrop" id="mobile-backdrop"></div>
+      <div class="mobile-nav-panel">
+        <div class="mobile-nav-header">
+          <div class="brand-logo">
+            <img src="assets/logo.jpg" alt="Ciel Barber Logo" class="brand-logo-img">
+          </div>
+          <button class="mobile-close-btn" id="menu-close" aria-label="Fechar Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <ul class="mobile-links">
+          <li><a href="#inicio" class="mobile-link">Início</a></li>
+          <li><a href="#sobre" class="mobile-link">Sobre Nós</a></li>
+          <li><a href="#servicos" class="mobile-link">Serviços</a></li>
+          <li><a href="#localizacao" class="mobile-link">Localização</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+          <a href="https://wa.me/557391709107" target="_blank" rel="noopener noreferrer" class="mobile-phone-display">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.075-2.039-.481-1.612-.666-2.658-2.288-2.738-2.395-.081-.107-.648-.864-.648-1.649 0-.785.412-1.171.558-1.332.146-.161.319-.201.425-.201.107 0 .213.002.305.007.098.005.228-.037.357.272.132.318.452 1.103.492 1.184.04.081.067.175.013.282-.054.107-.081.175-.161.268-.08.094-.17.209-.243.281-.081.08-.166.168-.071.331.095.163.422.697.906 1.128.623.555 1.148.728 1.31.808.163.081.258.068.354-.041.096-.109.412-.48.522-.646.11-.166.219-.138.368-.083.149.055.945.446 1.108.527.162.081.27.122.31.189.04.068.04.394-.104.799zM12.042 2c-5.522 0-10 4.477-10 10 0 1.92.548 3.714 1.503 5.244l-1.545 5.642 5.823-1.527c1.479.866 3.197 1.364 5.03 1.364 5.522 0 10-4.477 10-10 0-5.523-4.478-10-10.811-10.723zm0 18.232c-1.637 0-3.153-.49-4.428-1.331l-.317-.209-3.282.861.876-3.2-.232-.369c-.933-1.37-1.428-2.99-1.428-4.664 0-4.542 3.696-8.238 8.238-8.238 4.542 0 8.238 3.696 8.238 8.238 0 4.542-3.696 8.238-7.887 8.912z"/>
+            </svg>
+            <span>+55 73 9170-9107</span>
+          </a>
+          <a href="https://marciel17q7.setmore.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block mobile-agendar-btn">
+            Agendar Horário
+          </a>
+          <p class="mobile-contact-note">Atendimento individual com hora marcada</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================================================================= -->
+  <!-- 2. HERO SECTION COM BACKGROUND EM ALTA DEFINIÇÃO                  -->
+  <!-- ================================================================= -->
+  <section class="hero-section hero-bg-overlay" id="inicio">
+    <div class="hero-overlay"></div>
+    <div class="container hero-container-centered">
+      <div class="hero-content text-center">
+        <h1 class="hero-title hero-title-light">
+          Precisão cirúrgica e <span class="highlight-text-light">atendimento individual</span> em cada detalhe.
+        </h1>
+        <p class="hero-description hero-desc-light">
+          Uma experiência sob medida, sem filas ou rotatividade frenética. Atendimento 100% exclusivo.
+        </p>
+        <div class="hero-cta-group hero-cta-centered">
+          <!-- Botão Hero (Setmore) -->
+          <a href="https://marciel17q7.setmore.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+            <span>Agende seu Horário</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+          <a href="#servicos" class="btn btn-secondary-glass btn-lg">Ver Lista de Serviços</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- 3. SEÇÃO DE MÉTRICAS / ESTATÍSTICAS (4 BLOCOS)                     -->
+  <!-- ================================================================= -->
+  <section class="stats-section" id="metricas" aria-label="Diferenciais da Ciel Barber">
+    <div class="container">
+      <div class="stats-grid">
+        <!-- Bloco 1: Atendimento Exclusivo -->
+        <div class="stat-card">
+          <div class="stat-indicator"></div>
+          <span class="stat-prefix">DIFERENCIAL</span>
+          <p class="stat-title-custom">Atendimento Exclusivo</p>
+          <p class="stat-label">Cuidado individual 1 a 1, sem pressa e com hora marcada.</p>
+        </div>
+
+        <!-- Bloco 2: + de 5 Anos de Experiência -->
+        <div class="stat-card">
+          <div class="stat-indicator"></div>
+          <span class="stat-prefix">TRAJETÓRIA</span>
+          <p class="stat-number">+ de 5 Anos</p>
+          <p class="stat-label">De experiência e aperfeiçoamento constante no visagismo.</p>
+        </div>
+
+        <!-- Bloco 3: Clientes Satisfeitos -->
+        <div class="stat-card">
+          <div class="stat-indicator"></div>
+          <span class="stat-prefix">RECONHECIMENTO</span>
+          <p class="stat-title-custom">Clientes Satisfeitos</p>
+          <p class="stat-label">Fidelidade e recomendação de quem valoriza o estilo.</p>
+        </div>
+
+        <!-- Bloco 4: Ambiente Climatizado -->
+        <div class="stat-card">
+          <div class="stat-indicator"></div>
+          <span class="stat-prefix">CONFORTO</span>
+          <p class="stat-title-custom">Ambiente Climatizado</p>
+          <p class="stat-label">Espaço privativo com conforto, pontualidade e som ambiente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- ================================================================= -->
+  <!-- 4. SEÇÃO DE SERVIÇOS (EXATAMENTE E APENAS AS 7 OPÇÕES)            -->
+  <!-- ================================================================= -->
+  <section class="section services-section" id="servicos">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-eyebrow">TABELA DE SERVIÇOS</span>
+        <h2 class="section-title">Serviços</h2>
+        <p class="section-subtitle">
+          Atendimento personalizado com produtos de primeira linha. Escolha o serviço abaixo e agende diretamente na agenda online.
+        </p>
+      </div>
+      <div class="services-grid-7">
+        <!-- 1. Corte -->
+        <article class="service-card">
+          <div class="service-img-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=800&auto=format&fit=crop" 
+              alt="Corte de Cabelo Masculino" 
+              class="service-img"
+              loading="lazy"
+            >
+            <span class="service-badge">R$ 25,00</span>
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Corte</h3>
+            <p class="service-subtitle">Precisão e acabamento</p>
+            <p class="service-desc">
+              Corte moderno ou clássico realizado sob medida com tesoura e máquina, valorizando os traços do seu rosto.
+            </p>
+            <div class="service-footer">
+              <div class="service-price-tag">
+                <span class="price-val">R$ 25,00</span>
+              </div>
+              <a href="https://marciel17q7.setmore.com" target="_blank" rel="noopener noreferrer" class="btn btn-service" aria-label="Agendar Corte">
+                <span>Agendar</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 2. Corte + Sobrancelha -->
+        <article class="service-card">
+          <div class="service-img-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=800&auto=format&fit=crop" 
+              alt="Corte + Sobrancelha" 
+              class="service-img"
+              loading="lazy"
+            >
+            <span class="service-badge">R$ 30,00</span>
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Corte + Sobrancelha</h3>
+            <p class="service-subtitle">Harmonia e definição</p>
+            <p class="service-desc">
+              Corte completo personalizado acompanhado da limpeza e alinhamento milimétrico da sobrancelha na navalha.
+            </p>
+            <div class="service-footer">
+              <div class="service-price-tag">
+                <span class="price-val">R$ 30,00</span>
+              </div>
+              <a href="https://marciel17q7.setmore.com" target="_blank" rel="noopener noreferrer" class="btn btn-service" aria-label="Agendar Corte e Sobrancelha">
+                <span>Agendar</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 3. Barba -->
+        <article class="service-card">
+          <div class="service-img-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=800&auto=format&fit=crop" 
+              alt="Barba alinhada" 
+              class="service-img"
+              loading="lazy"
+            >
+            <span class="service-badge">R$ 20,00</span>
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Barba</h3>
+            <p class="service-subtitle">Modelagem e contorno</p>
+            <p class="service-desc">
+              Desenho, aparo dos fios e alinhamento na navalha com aplicação de loção pós-barba refrescante e hidratante.
+            </p>
+            <div class="service-footer">
+              <div class="service-price-tag">
+                <span class="price-val">R$ 20,00</span>
+              </div>
+              <a href="https://marciel17q7.setmore.com" target="_blank" rel="noopener noreferrer" class="btn btn-service" aria-label="Agendar Barba">
+                <span>Agendar</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 4. Corte + Barba -->
+        <article class="service-card">
+          <div class="service-img-wrapper">
+            <img 
+              src="assets/baraba-cabelo-11.jpg" 
+              alt="Corte + Barba" 
+              class="service-img"
+              loading="lazy"
+            >
+            <span class="service-badge">R$ 50,00</span>
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Corte + Barba</h3>
+            <p class="service-subtitle">Alinhamento completo</p>
+            <p class="service-desc">
+              A combinação perfeita para manter seu estilo sempre afiado. Corte sob medida com desenho impecável de barba.
+            </p>
+            <div class="service-footer">
+              <div class="service-price-tag">
+                <span class="price-val">R$ 50,00</span>
+              </div>
+              <a href="https://marciel17q7.setmore.com" target="_blank" rel="noopener noreferrer" class="btn btn-service" aria-label="Agendar Corte e Barba">
+                <span>Agendar</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 5. Luzes -->
+        <article class="service-card">
+          <div class="service-img-wrapper">
+            <img 
+              src="assets/luzes.jpg" 
+              alt="Luzes no cabelo masculino" 
+              class="service-img"
+              loading="lazy"
+            >
+            <span class="service-badge">R$ 70,00</span>
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Luzes</h3>
+            <p class="service-subtitle">Iluminação e destaque</p>
+            <p class="service-desc">
+              Mechas e luzes com descoloração controlada, proporcionando contraste moderno e textura aos fios com acabamento natural.
+            </p>
+            <div class="service-footer">
+              <div class="service-price-tag">
+                <span class="price-val">R$ 70,00</span>
+              </div>
+              <a href="https://marciel17q7.setmore.com" target="_blank" rel="noopener noreferrer" class="btn btn-service" aria-label="Agendar Luzes">
+                <span>Agendar</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 6. Platinado -->
+        <article class="service-card">
+          <div class="service-img-wrapper">
+            <img 
+              src="assets/platinado.jpg" 
+              alt="Cabelo Platinado Masculino" 
+              class="service-img"
+              loading="lazy"
+            >
+            <span class="service-badge">R$ 120,00</span>
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Platinado</h3>
+            <p class="service-subtitle">Transformação de alta intensidade</p>
+            <p class="service-desc">
+              Descoloração global técnica e matização precisa para alcançar o tom platinado perfeito, com proteção e tratamento capilar.
+            </p>
+            <div class="service-footer">
+              <div class="service-price-tag">
+                <span class="price-val">R$ 120,00</span>
+              </div>
+              <a href="https://marciel17q7.setmore.com" target="_blank" rel="noopener noreferrer" class="btn btn-service" aria-label="Agendar Platinado">
+                <span>Agendar</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 7. Combo (Com Placeholder de Imagem) -->
+        <article class="service-card highlight-card">
+          <div class="service-img-wrapper">
+            <img 
+              src="assets/corte_barba.jpg" 
+              alt="Combo Ciel Barber" 
+              class="service-img"
+              loading="lazy"
+            >
+            <span class="service-badge service-badge-gold">R$ 60,00</span>
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Combo</h3>
+            <p class="service-subtitle">Cuidado completo e integrado</p>
+            <p class="service-desc">
+              A experiência completa de alinhamento com corte sob medida, barba desenhada na navalha e acabamento de sobrancelha.
+            </p>
+            <div class="service-footer">
+              <div class="service-price-tag">
+                <span class="price-val text-primary-bold">R$ 60,00</span>
+              </div>
+              <a href="https://marciel17q7.setmore.com" target="_blank" rel="noopener noreferrer" class="btn btn-service btn-service-highlight" aria-label="Agendar Combo">
+                <span>Agendar</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- BANNER DE CONVERSÃO DIRETA PARA O AGENDAMENTO ONLINE              -->
+  <!-- ================================================================= -->
+  <section class="section booking-banner-section">
+    <div class="container">
+      <div class="booking-cta-card">
+        <div class="booking-cta-content">
+          <span class="cta-eyebrow">HORÁRIO MARCADO</span>
+          <h2 class="cta-title">Agende seu horário com total praticidade</h2>
+          <p class="cta-description">
+            Acesse nossa agenda online no Setmore, veja os horários disponíveis em tempo real e reserve seu atendimento exclusivo com o Ciel.
+          </p>
+          <div class="cta-buttons">
+            <a href="https://marciel17q7.setmore.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+              <span>Agendar Horário Online</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+            <a href="https://wa.me/557391709107?text=Ol%C3%A1%20Ciel%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20os%20hor%C3%A1rios!" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+              Dúvidas no WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- SEÇÃO SOBRE NÓS (CONCEITO DO BARBEIRO EXCLUSIVO CIEL)             -->
+  <!-- ================================================================= -->
+  <section class="section about-section" id="sobre">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images">
+          <div class="about-img-main">
+            <img 
+              src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=800&auto=format&fit=crop" 
+              alt="Ciel cuidando com exclusividade de cada cliente" 
+              loading="lazy"
+              width="800"
+              height="600"
+            >
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="section-eyebrow">O BARBEIRO</span>
+          <h2 class="section-title">Dedicação exclusiva ao seu estilo e bem-estar.</h2>
+          <p class="about-text">
+            A <strong>Ciel Barber</strong> foi concebida para romper com o modelo convencional de barbearias barulhentas e apressadas. Aqui, cada cliente é atendido individualmente pelo próprio <strong>Ciel</strong>, garantindo padrão inegociável de qualidade.
+          </p>
+          <p class="about-text">
+            Ciel une visagismo personalizado, toalhas aquecidas e materiais esterilizados a um ambiente climatizado e privativo, onde você pode relaxar e tomar um café especial sem interrupções.
+          </p>
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"></circle><path d="M5.5 21a8.38 8.38 0 0 1 13 0"></path></svg>
+              </div>
+              <div>
+                <h4 class="feature-title">Atendimento Personalizado</h4>
+                <p class="feature-desc">O barbeiro Ciel realiza cada etapa do seu atendimento do início ao fim com total atenção.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- SEÇÃO LOCALIZAÇÃO                                                 -->
+  <!-- ================================================================= -->
+  <section class="section units-section" id="localizacao">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-eyebrow">ONDE ESTAMOS</span>
+        <h2 class="section-title">Localização</h2>
+        <p class="section-subtitle">
+          Ambiente privativo, fácil acesso e estacionamento nas proximidades para seu maior conforto.
+        </p>
+      </div>
+
+      <div class="location-card-box">
+        <div class="location-info-side">
+          <h3 class="location-name">Ciel Barber Studio</h3>
+          <p class="location-address">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Rua Linhares, Nº 44 - Bairro Santa Clara, Itabuna - BA
+          </p>
+          <p class="location-hours">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <strong>Horário:</strong> Terça a Sábado: 09:00 às 20:00 (Com hora marcada)
+          </p>
+          <p class="location-contact">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <strong>WhatsApp:</strong> <a href="https://wa.me/557391709107" target="_blank" rel="noopener noreferrer" class="contact-number-link">+55 73 9170-9107</a>
+          </p>
+          <div class="location-actions">
+            <a href="https://marciel17q7.setmore.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              <span>Agendar Horário Online</span>
+            </a>
+            <a href="https://maps.google.com/?q=Rua+Linhares,+44+-+Santa+Clara,+Itabuna+-+BA" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              Ver Rota no Google Maps
+            </a>
+          </div>
+        </div>
+        <div class="location-visual-side">
+          <img 
+            src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=800&auto=format&fit=crop" 
+            alt="Ambiente Ciel Barber" 
+            loading="lazy"
+            width="800"
+            height="500"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- FOOTER                                                            -->
+  <!-- ================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col footer-brand">
+        <div class="brand-logo">
+          <img src="assets/logo.jpg" alt="Ciel Barber Logo" class="brand-logo-img">
+        </div>
+        <p class="footer-bio">
+          Atendimento individual com o barbeiro Ciel. Precisão, conforto e pontualidade para o homem que valoriza sua imagem.
+        </p>
+        <div class="social-links">
+          <a href="https://wa.me/557391709107" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp Ciel Barber">WhatsApp</a>
+          <a href="#" class="social-link" aria-label="Instagram Ciel Barber">Instagram</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Navegação</h4>
+        <ul class="footer-nav">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#localizacao">Localização</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Atendimento & Reservas</h4>
+        <p class="footer-info">Terça a Sábado: 09:00 às 20:00</p>
+        <p class="footer-info">Atendimento com hora marcada</p>
+        <!-- Número de telefone em destaque no Footer -->
+        <p class="footer-info font-medium footer-phone-highlight">
+          <a href="https://wa.me/557391709107" target="_blank" rel="noopener noreferrer">
+            📱 WhatsApp: <strong>+55 73 9170-9107</strong>
+          </a>
+        </p>
+        <a href="https://marciel17q7.setmore.com" target="_blank" rel="noopener noreferrer" class="footer-app-link">
+          → Agendar Horário Online (Setmore)
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>© 2026 Ciel Barber. Todos os direitos reservados.</p>
+        <p class="footer-legal">Barbeiro Exclusivo Ciel • WhatsApp: +55 73 9170-9107</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================================================================= -->
+  <!-- 5. BOTÃO FLUTUANTE DO WHATSAPP (OFICIAL +55 73 9170-9107)         -->
+  <!-- ================================================================= -->
+  <aside class="whatsapp-float-container" aria-label="Contato direto pelo WhatsApp">
+    <a 
+      href="https://wa.me/557391709107?text=Ol%C3%A1%20Ciel%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio!" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="whatsapp-float-btn"
+      id="whatsapp-btn"
+      aria-label="Falar com Ciel no WhatsApp (+55 73 9170-9107)"
+    >
+      <span class="whatsapp-pulse"></span>
+      <span class="whatsapp-tooltip">Agendar: +55 73 9170-9107</span>
+      <!-- Ícone Oficial do WhatsApp em SVG -->
+      <svg class="whatsapp-icon" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.075-2.039-.481-1.612-.666-2.658-2.288-2.738-2.395-.081-.107-.648-.864-.648-1.649 0-.785.412-1.171.558-1.332.146-.161.319-.201.425-.201.107 0 .213.002.305.007.098.005.228-.037.357.272.132.318.452 1.103.492 1.184.04.081.067.175.013.282-.054.107-.081.175-.161.268-.08.094-.17.209-.243.281-.081.08-.166.168-.071.331.095.163.422.697.906 1.128.623.555 1.148.728 1.31.808.163.081.258.068.354-.041.096-.109.412-.48.522-.646.11-.166.219-.138.368-.083.149.055.945.446 1.108.527.162.081.27.122.31.189.04.068.04.394-.104.799zM12.042 2c-5.522 0-10 4.477-10 10 0 1.92.548 3.714 1.503 5.244l-1.545 5.642 5.823-1.527c1.479.866 3.197 1.364 5.03 1.364 5.522 0 10-4.477 10-10 0-5.523-4.478-10-10.811-10.723zm0 18.232c-1.637 0-3.153-.49-4.428-1.331l-.317-.209-3.282.861.876-3.2-.232-.369c-.933-1.37-1.428-2.99-1.428-4.664 0-4.542 3.696-8.238 8.238-8.238 4.542 0 8.238 3.696 8.238 8.238 0 4.542-3.696 8.238-7.887 8.912z"/>
+      </svg>
+    </a>
+  </aside>
+
+  <!-- JavaScript Modular -->
+  <script src="js/main.js"></script>
+</body>
+</html>
